@@ -12,7 +12,7 @@ import {
 import { FcBullish, FcBearish, FcMoneyTransfer } from 'react-icons/fc';
 
 function StatsCard(data) {
-  const { title, stat, icon, cor } = data;
+  const { title, stat, icon } = data;
   return (
     <Stat
       px={{ base: 2, md: 4 }}
@@ -44,7 +44,7 @@ function StatsCard(data) {
   );
 }
 
-export default function Card() {
+export default function Card({ data }) {
   return (
     <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
       <chakra.h1
@@ -58,17 +58,17 @@ export default function Card() {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard
           title={'Entrada'}
-          stat={'2700'}
+          stat={data.entrada}
           icon={<FcBullish size={'3em'} />}
         />
         <StatsCard
           title={'Saida'}
-          stat={'3054.9'}
+          stat={data.saida}
           icon={<FcBearish size={'3em'} />}
         />
         <StatsCard
           title={'Total'}
-          stat={'354.9'}
+          stat={data.total}
           icon={<FcMoneyTransfer size={'3em'} />}
         />
       </SimpleGrid>
