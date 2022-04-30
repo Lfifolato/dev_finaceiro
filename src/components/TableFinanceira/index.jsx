@@ -45,7 +45,7 @@ export default function TableFinanceira({ ...pros }) {
             <Tr key={item.id}>
               <Td>{item.descricao}</Td>
               <Td>{item.tipo}</Td>
-              <Td>{item.valor}</Td>
+              <Td>R$ {item.valor}</Td>
               <Td>{item.created_at}</Td>
               <Td>
                 <IconButton

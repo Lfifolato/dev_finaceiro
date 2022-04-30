@@ -28,7 +28,7 @@ function StatsCard(data) {
             {title}
           </StatLabel>
           <StatNumber fontSize={'3xl'} fontWeight={'medium'}>
-            {stat}
+            R$ {stat}
           </StatNumber>
         </Box>
 
