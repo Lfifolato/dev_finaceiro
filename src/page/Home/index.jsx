@@ -84,7 +84,7 @@ export default function Home() {
               py={'5'}
               shadow={'xl'}
               border={'1px solid'}
-              borderColor={'gray.500'}
+              borderColor={'gray.900'}
               rounded={'lg'}
               mb="4"
             >
